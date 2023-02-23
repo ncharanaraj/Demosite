@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+section {
+    display: flex;
+    max-width: 60vw;
+    margin: auto;
+}
+
+div {
+    flex: 1 400px;
+    border: 1px solid red;
+    padding: 1rem;
+    margin: 40px;
+}
+
+div:first-child {
+    background-color: #2E6434;
+    color: #FFF;
+}
+
+article {
+   border-bottom: 1px dashed #A9A9AA;
+   padding-bottom: 1rem;
+}
+
+@media (max-width: 426px) {
+    section {
+        flex-wrap: wrap;
+    }
+}
