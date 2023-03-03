@@ -1,0 +1,17 @@
+.personal-info {
+    display: flex;
+}
+
+.personal-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-info fieldset {
+    display: flex;
+}
+
+.edu-id {
+    display: flex;
+    flex-direction: column;
+}
