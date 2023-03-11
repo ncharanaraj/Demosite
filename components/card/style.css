@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+img {
+  border-radius: 12px;
+  height: 214px;
+  object-fit: cover;
+  width: 100%;
+}
+
+#container {
+  margin: auto;
+  max-width: 294px;
+}
+
+.card {
+  border: 1px solid #bacdd8;
+  border-radius: 12px;
+  margin-top: 20vh;
+  padding: 8px;
+}
+
+.tag {
+  border: 1px solid #e5eaed;
+  border-radius: 33px;
+  color: #788697;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
+}
+
+.name {
+  color: #0e2632;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+p {
+  color: #7f8c9b;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  margin: 16px 0;
+}
+
+button {
+  animation: all 300ms ease-in-out;
+  background-color: #e0efff;
+  border: none;
+  border-radius: 49px;
+  color: #0077ff;
+  cursor: pointer;
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 12px 24px;
+}
+
+.card-details {
+  padding: 16px 9px 8px;
+}
+
+button:hover,
+button:focus {
+  background-color: #0077ff;
+  color: #e0efff;
+}
