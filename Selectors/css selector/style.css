@@ -58,12 +58,6 @@ div.warning .alert__container::before {
   background-color: #e8ac00;
 }
 
-/* Step 11: Select elements with class of alert__details: 
-  - Give it top and bottom padding of 12px
-  - Give every p elements inside it font size of 14px and margin bottom of 12px
-  - Give the first p element font size of 16px and font weight of bold
-*/
-
 .alert__details {
   padding: 12px 0;
 }
@@ -99,11 +93,6 @@ button[disabled] {
   margin-top: 40px;
   font-style: italic;
 }
-
-/* Step 15: Select all sibling alert elements of h3 elements that have class of dark-mode and give it:
- - Text color: white
- - Background color of #393939
-*/
 
 h3.dark-mode ~ .alert {
   color: #fff;
