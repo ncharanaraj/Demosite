@@ -50,27 +50,45 @@ Task 5: Give
 .section {
   background-color: #140d0b;
   color: #fef6e4;
+
+  display: flex;
+  align-items: center;
+  height: 100vh;
 }
 
 .bird-photo {
+  width: 50%;
+  height: 100%;
+
+  object-fit: cover;
 }
 
 .side-section {
+  width: 50%;
 }
 
 .about {
   margin: 0 auto;
   width: fit-content;
+
+  padding: 20px;
+  /* object-fit: cover; */
 }
 
 .author {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .about h2 {
   font-family: "Playfair Display", serif;
+  font-size: 2rem;
 }
 
 .about p {
+  font-size: 1rem;
+  max-width: 50ch;
 }
 
 .about button {
@@ -78,5 +96,6 @@ Task 5: Give
   background-color: #feb51c;
   color: #140d0b;
   font-weight: bold;
+  font-size: 0.75rem;
+  padding: 1em 1.5em;
 }
-
