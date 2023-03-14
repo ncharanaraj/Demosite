@@ -45,32 +45,6 @@ section {
   padding: 50px 12px;
 }
 
-/* 
-Task 1:
-
-- Use relative position to move the puppy photo 20px to the right and 40px to the bottom
-- Use relative position to move the kitty photo 20px to the left and 40px to the top
-- Give the element with `photos` class vertical padding of 40px
-- Give the puppy photo z-index equal to 1
-
-Task 2:
-
-- Use position absolute to align close button to the top right corner of the privacy popup
-
-Task 3:
-
-- Use position fixed to align the privacy popup to the bottom right corner
-
-Task 4:
-
-- Use position sticky to keep the navigation stay on top when users scroll and give it z-index equal to 2
-- In about section, use position sticky to keep the side navigation at the same place when users scroll within their parent elements
-
-Task 5:
-
-- In the `about` section, use float to wrap the paragraph around the image and align the image to the right
-*/
-
 nav {
   display: flex;
   justify-content: space-between;
