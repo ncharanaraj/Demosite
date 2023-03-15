@@ -187,24 +187,41 @@ body {
 /* Task 4 */
 
 .task-4.container {
+  display: grid;
+  gap: 24px;
+
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 
 .task-4 .item-5 {
+  grid-column: span 3;
 }
 
 /* Task 5 */
 
 .task-5.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 }
 
 .task-5 .item-1 {
+  grid-column: 10 / span 3;
+  grid-row: 10 / span 3;
 }
 
 .task-5 .item-2 {
+  grid-column: 4 / span 3;
+  grid-row: 4 / span 3;
 }
 
 .task-5 .item-3 {
+  grid-column: 7 / span 3;
+  grid-row: 7 / span 3;
 }
 
 .task-5 .item-4 {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 3;
 }
