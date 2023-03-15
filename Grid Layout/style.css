@@ -125,30 +125,63 @@ body {
 /* Task 3.2 */
 
 .task-3-2.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto auto 1fr auto auto auto;
+  gap: 24px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "sidebar"
+    "ads"
+    "footer";
 }
 
 .task-3-2 .header {
+  grid-area: header;
 }
 
 .task-3-2 .navigation {
+  grid-area: nav;
 }
 
 .task-3-2 .ads {
+  grid-area: ads;
 }
 
 .task-3-2 .sidebar {
+  grid-area: sidebar;
 }
 
 .task-3-2 .main {
+  grid-area: main;
 }
 
 .task-3-2 .footer {
+  grid-area: footer;
 }
 
 @media (min-width: 720px) {
+  .task-3-2.container {
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "sidebar main main"
+      "ads footer footer";
+  }
 }
 
 @media (min-width: 1020px) {
+  .task-3-2.container {
+    grid-template-areas:
+      "header header header header"
+      "nav nav nav nav"
+      "sidebar main main ads"
+      "footer footer footer footer";
+    grid-template-rows: auto auto 1fr auto;
+  }
 }
 
 /* Task 4 */
