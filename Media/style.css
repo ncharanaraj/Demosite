@@ -9,15 +9,6 @@ a {
   color: #b347d8;
 }
 
-/* 
-Task 2: Delete media queries in task 1 and use the desktop-first approach to have the same result
-
-Task 3: Show the navigation on the top of the page instead of on the left when the user is on the portrait view
-
-Task 4: 
-- Have the top navigation only if the screen is narrower than 640px.
-- Change the font size of the icons to be 24px and navigation width to be 64px if the screen is wider than 768px or on the landscape view */
-
 main {
   overflow-y: scroll;
   height: 100vh;
@@ -146,5 +137,29 @@ img {
 @media (max-width: 640px) {
   .collection-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Orientation */
+
+@media (orientation: portrait) and (max-width: 640px) {
+  body {
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: none;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #dbdce1;
+  }
+}
+
+@media (orientation: landscape), (min-width: 768px) {
+  body {
+    grid-template-columns: 64px 1fr;
+  }
+  nav .material-icons {
+    font-size: 24px;
   }
 }
