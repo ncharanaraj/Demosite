@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Object-oriented JavaScript example</title>
+  </head>
+
+  <body>
+    <p>
+      This example requires you to enter commands in your browser's JavaScript
+      console (see
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools"
+        >What are browser developer tools</a
+      >
+      for more information).
+    </p>
+    <script>
+      var person = {
+        name: ["Bob", "Smith"],
+        age: 32,
+        bio() {
+          console.log(
+            `${this.name[0]} ${this.name[1]} is ${this.age} years old.`
+          );
+        },
+        introduceSelf() {
+          console.log(`Hi I'm ${this.name[0]}.`);
+        },
+      };
+
+      var member = {
+        name: {
+          firstName: "Charan",
+          lastName: "Gowda",
+        },
+      };
+
+      function logProperty(propertyName) {
+        console.log(person[propertyName]);
+      }
+
+      //   logProperty("name");
+
+      //Object update using Dot Notation
+      //   person.name[1] = "Charan";
+      //   member.name.firstName = "Cherry";
+
+      //Object update using Bracket Notation
+      person["name"] = ["Cherry", "bob"];
+
+      //Adding new property to person object using Dot notation
+      person.eyes = "hazel";
+      person.farewell = function () {
+        console.log("Bye Bye Everybody");
+      };
+
+      //   Adding new property to person object using bracket notation
+      person["realationship"] = "Boyfriend";
+      person["type"] = "like indians";
+
+      const myDataName = "height";
+      const myDataValue = "1.75m";
+      person[myDataName] = myDataValue;
+
+      //Creating more objects. Old Method
+
+      function createPerson(name) {
+        const obj = {};
+        obj.name = name;
+        obj.introduceSelf = function () {
+          console.log(`Hi, I'm ${this.name}`);
+        };
+        return obj;
+      }
+
+      // Object 1
+      //   const selva = createPerson("selva");
+      //   console.log(selva.introduceSelf());
+
+      //   creating methods in  New method
+      function Person(name) {
+        this.name = name;
+        this.introduceSelf = function () {
+          console.log(`Hi, I'm ${this.name}`);
+        };
+      }
+
+      const person1 = new Person("Charan");
+      console.log(person1.name);
+    </script>
+  </body>
+</html>
