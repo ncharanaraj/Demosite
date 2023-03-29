@@ -86,9 +86,96 @@
           console.log(`Hi, I'm ${this.name}`);
         };
       }
-
       const person1 = new Person("Charan");
-      console.log(person1.name);
+
+      // Plymorphism
+
+      let door = {
+        bell: function () {
+          console.log("Open the door");
+        },
+      };
+
+      let bicycle = {
+        bell: function () {
+          console.log("Watch out");
+        },
+      };
+
+      function ringTheBell(ring) {
+        console.log(ring.bell());
+      }
+
+      // funtion call
+      // ringTheBell(bicycle);
+
+      // console.log("abc".concat("def"));
+      // console.log(["abc"].concat(["def"]));
+      // console.log(["abc"] + ["def"]);
+      // console.log("abc".concat("def"));
+
+      class FrontDev {
+        basic() {
+          console.log("HTML, CSS, JavaScript");
+        }
+      }
+
+      class Frameworks extends FrontDev {
+        mid() {
+          super.basic();
+          console.log("React");
+        }
+      }
+
+      class Backend extends Frameworks {
+        fullstack() {
+          super.mid();
+          console.log("MangoDB, Express, NodeJs");
+        }
+      }
+
+      let beginner = new FrontDev();
+      // console.log(beginner.basic());
+
+      let intermediate = new Frameworks();
+      // console.log(intermediate.mid());
+
+      let advanced = new Backend();
+      // console.log(advanced.fullstack());
+
+      // console.log(new Date());
+      // console.log("abcd".match(/d/));
+
+      // Creating class
+      class Train {
+        constructor(color, lightsOn) {
+          this.color = color;
+          this.lightsOn = lightsOn;
+        }
+
+        toggleLights() {
+          this.lightsOn = !this.lightsOn;
+        }
+
+        lightsStatus() {
+          console.log("Lights on?", this.lightsOn);
+        }
+
+        getSelf() {
+          console.log(this);
+        }
+
+        getPrototype() {
+          var proto = Object.getPrototypeOf(this);
+          console.log(proto);
+        }
+      }
+
+      var myFirstTrain = new Train("red", false);
+      console.log(myFirstTrain.toggleLights());
+      console.log(myFirstTrain.lightsStatus());
+      console.log(myFirstTrain.getSelf());
+      console.log(myFirstTrain.getPrototype());
     </script>
   </body>
 </html>
