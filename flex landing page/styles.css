@@ -281,3 +281,24 @@ header {
   right: 20px;
   color: #ffffff;
 }
+
+/* Cta */
+
+.cta-section {
+  background-color: #183b54;
+  padding-block: 100px;
+}
+
+.cta-section-container {
+  flex-direction: column;
+  gap: 30px;
+  color: #ffffff;
+}
+
+.cta-section-container h2 {
+  margin-top: 20px;
+}
+
+.cta-section-container p {
+  color: #ffffff;
+}
